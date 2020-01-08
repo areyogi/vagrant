@@ -5,7 +5,7 @@ pipeline {
       GITHUB_REPO_VAGRANT = 'ssh://git@git.intra.lutron.com:7999/vc/rockhopper-vagrantfiles.git'
 
    }
-    agents any
+    agent any
     stages {
         stage('stage-1 test-vagrant') {
             steps {

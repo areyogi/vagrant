@@ -13,7 +13,7 @@ pipeline {
                     utility.checkoutRepository('vagrantfiles',
                                                GITHUB_REPO_VAGRANT,
                                                'master')
-                    public VagrantUpCommand(String vagrantFile,
+                    VagrantUpCommand(String vagrantFile,
                                             String vagrantVm,
                                             boolean destroyOnError,
                                             String provider,
